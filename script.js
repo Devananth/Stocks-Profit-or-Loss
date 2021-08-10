@@ -10,8 +10,12 @@ var btn = document.querySelector('.check');
 
 var error = document.querySelector('.error');
 
+var form = document.querySelector('.container');
 
-btn.addEventListener('click' , () => {
+
+document.addEventListener('submit' , (e) => {
+
+    e.preventDefault();
 
     noerror();
 
@@ -34,6 +38,8 @@ btn.addEventListener('click' , () => {
 
         opt.innerHTML = `<p>You gained ${percent}%.Your total profit is Rs.${profit}</p>` ;
 
+        form.style.backgroundColor = 'Yellow';
+
     }
     else
     {
@@ -42,6 +48,8 @@ btn.addEventListener('click' , () => {
         let percent = ((loss*100)/cp).toFixed(2);
 
         opt.innerHTML = `<p>You lost ${percent}%.Your total loss is Rs.${loss}</p>` ;
+
+        form.style.backgroundColor = 'pink';
 
     }
 
