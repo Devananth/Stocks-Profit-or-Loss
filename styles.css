@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body{
+    background : url("/images/wave.png") no-repeat center center/cover;
+    font-family: 'STIX Two Text', serif;
+}
+
+label{
+    display : block;
+    margin : .5rem;
+    font-size: 1.3rem;
+}
+
+input{
+    padding : .6rem;
+    margin-bottom: .5rem;
+    border-radius : .5rem;
+}
+
+.container{
+    text-align: center;
+    width : 30%;
+    margin : auto;
+    margin-top : 12rem;    
+    box-shadow: 10px 10px 20px pink ;
+    padding : 1rem;
+}
+
+button{
+    width : 30%;
+    padding : .6rem;
+    margin : .5rem;
+    background-color : dodgerblue;
+    border-radius : 1rem;
+    color : white;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.output , .error{
+    display : none;
+    margin : .5rem;
+    padding : .8rem;
+    background-color: beige;
+}
+
+@media only screen and (max-width : 500px) {
+
+    .container{
+        width : 90%;
+        margin : 2rem auto;
+    }
+    
+}
+
+@media only screen and (width : 768px) {
+
+    .container{
+        width : 90%;
+        margin : 10rem auto;
+    }
+    
+}
+
+
+
+
+
+
+
+

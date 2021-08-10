@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profit or Loss</title>
+</head>
+<body>
+    
+
+    <h1 style="text-align:center; margin-top : 4rem; color:white;">Check Profit/Loss of your Stock</h1>
+
+    <div class="container">
+
+        <div class="form-group">
+            <label>Purchase Price</label>
+            <input type="number" class="cost-price" id="cost-price" placeholder="Enter the Purchase price of the stock" min="0" required>
+        </div>
+
+        <div class="form-group">
+            <label>Stock Quantity</label>
+            <input type="number" class="quantity" id="quantity" placeholder="Enter the quatity of the stock" min="0" required>
+        </div>
+
+        <div class="form-group">
+            <label>Current Price</label>
+            <input type="number" class="selling-price" id="selling-price" placeholder="Enter the current price of the stock" min="0" required>
+        </div>
+
+        <button type="submit" class="check">Check</button>
+
+        <div class="error">Please enter only values greater than zero (i.e) Positive values</div>
+
+        <div class="output"></div>
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
