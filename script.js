@@ -41,7 +41,7 @@ document.addEventListener('submit' , (e) => {
         form.style.backgroundColor = 'Yellow';
 
     }
-    else
+    else if(cp > sp)
     {
         let loss = ((cp-sp)*quant).toFixed(2);
 
@@ -51,6 +51,10 @@ document.addEventListener('submit' , (e) => {
 
         form.style.backgroundColor = 'pink';
 
+    }
+    else
+    {
+        opt.innerHTML = `No Profit and No Loss`;
     }
 
     opt.style.display = "block";
