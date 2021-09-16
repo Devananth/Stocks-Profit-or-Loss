@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 body{
     background : url("/images/wave.png") no-repeat center center/cover;
     font-family: 'STIX Two Text', serif;
@@ -27,7 +35,7 @@ input{
     text-align: center;
     width : 30%;
     margin : auto;
-    margin-top : 12rem;    
+    margin-top : 8rem;    
     box-shadow: 10px 10px 20px pink ;
     padding : 1rem;
 }
@@ -50,6 +58,26 @@ button:hover {
     margin : .5rem;
     padding : .8rem;
     background-color: beige;
+}
+
+.footer-container ul{
+    padding : 1rem;
+    display : flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-container ul li{
+    margin : 1rem;
+}
+
+.footer-container ul li a{
+    text-align: center;
+    font-size : 2rem;
+}
+
+.footer-container ul li a:hover{
+    border-bottom: 1px solid blue;
 }
 
 @media only screen and (max-width : 500px) {
